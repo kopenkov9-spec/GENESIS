@@ -1,6 +1,7 @@
 {
   "name": "genesis-beyond-matter",
   "private": true,
+  "license": "MIT",
   "description": "Offline procedural evolution sandbox",
   "scripts": {
     "test": "node --test tests/rules.test.cjs",

@@ -33,3 +33,7 @@ Each goal under **Field → Next epoch** opens the panel where you can act on it
 
 <!-- gallery:start -->
 <!-- gallery:end -->
+
+## License
+
+The game and its documentation are distributed under the [MIT License](LICENSE). The standalone HTML file includes the full license text.

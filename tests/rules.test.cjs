@@ -450,8 +450,10 @@ test('catalog worker source runs as an independent message processor', () => {
     age: 90
   })));
 });
-test('standalone distribution has no online asset or network API dependency', () => {
+test('standalone distribution includes the license and has no online asset or network API dependency', () => {
   const html = fs.readFileSync(path.join(__dirname, '../GENESIS_Beyond_Matter.html'), 'utf8');
+  const license = fs.readFileSync(path.join(__dirname, '../LICENSE'), 'utf8').replaceAll('\r\n', '\n').trimEnd();
+  assert(html.replaceAll('\r\n', '\n').includes('<!--\n' + license + '\n-->'));
   assert(html.includes("connect-src 'none'"));
   assert(!/<(?:script|img|link|source)[^>]+(?:src|href)=["'](?:https?:|\/\/)/i.test(html));
   assert(!/\b(?:fetch|XMLHttpRequest|WebSocket|EventSource|sendBeacon)\s*\(/.test(html));

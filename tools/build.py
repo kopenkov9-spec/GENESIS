@@ -30,6 +30,8 @@ self.onmessage = event => {
     js = source(CORE) + boot + source(CLIENT)
     assert not re.search(r"</script", shared + js, re.I)
     html = (SRC / "shell.html").read_text(encoding="utf8")
+    license_text = (ROOT / "LICENSE").read_text(encoding="utf8").rstrip()
+    html = html.replace("<!--__LICENSE__-->", f"<!--\n{license_text}\n-->")
     html = html.replace("/*__KERNEL__*/", shared)
     html = html.replace("/*__CSS__*/", (SRC / "style.css").read_text(encoding="utf8")).replace("/*__SCRIPT__*/", js)
     out = ROOT / "GENESIS_Beyond_Matter.html"
