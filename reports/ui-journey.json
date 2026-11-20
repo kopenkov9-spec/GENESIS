@@ -1,0 +1,19 @@
+{
+  "host": "Node DOM event fixture + native Skia",
+  "portableFileRoundTrip": true,
+  "corruptFileRejected": true,
+  "epochs": [
+    "Evolution",
+    "Awakening",
+    "Civilization",
+    "Spaceflight",
+    "Transcendence"
+  ],
+  "discoveries": [
+    "tools",
+    "resonance",
+    "circuit",
+    "fold"
+  ],
+  "home": "Vemai"
+}

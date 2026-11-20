@@ -1,0 +1,109 @@
+{
+  "runtime": "v24.22.3",
+  "platform": "linux",
+  "arch": "x64",
+  "referenceCPUVisible": "AMD EPYC 9V74 80-Core Processor",
+  "logicalCPUsVisible": 9,
+  "simulation": [
+    {
+      "era": 0,
+      "samples": 96,
+      "medianMs": 0.266,
+      "p95Ms": 0.434
+    },
+    {
+      "era": 1,
+      "samples": 96,
+      "medianMs": 0.259,
+      "p95Ms": 0.336
+    },
+    {
+      "era": 2,
+      "samples": 96,
+      "medianMs": 0.26,
+      "p95Ms": 0.351
+    },
+    {
+      "era": 3,
+      "samples": 96,
+      "medianMs": 0.274,
+      "p95Ms": 0.327
+    },
+    {
+      "era": 4,
+      "samples": 96,
+      "medianMs": 0.003,
+      "p95Ms": 0.027
+    },
+    {
+      "era": 5,
+      "samples": 96,
+      "medianMs": 0.236,
+      "p95Ms": 0.283
+    }
+  ],
+  "journey": {
+    "seed": "PELAGOS",
+    "actions": 84,
+    "ticks": 513,
+    "worlds": 3,
+    "buildings": 12,
+    "saveBytes": 16228,
+    "epochs": [
+      0,
+      2.25,
+      4,
+      18.75,
+      57.875,
+      59
+    ]
+  },
+  "htmlBytes": 208774,
+  "canvas": {
+    "backend": "Skia / @napi-rs/canvas, CPU, DPR 1",
+    "width": 960,
+    "height": 600,
+    "frames": [
+      {
+        "era": 0,
+        "samples": 28,
+        "medianMs": 13.742,
+        "p95Ms": 19.346
+      },
+      {
+        "era": 1,
+        "samples": 28,
+        "medianMs": 19.664,
+        "p95Ms": 22.301
+      },
+      {
+        "era": 2,
+        "samples": 28,
+        "medianMs": 19.707,
+        "p95Ms": 23.373
+      },
+      {
+        "era": 3,
+        "samples": 28,
+        "medianMs": 11.989,
+        "p95Ms": 14.54
+      },
+      {
+        "era": 4,
+        "samples": 28,
+        "medianMs": 7.625,
+        "p95Ms": 10.217
+      },
+      {
+        "era": 5,
+        "samples": 28,
+        "medianMs": 14.743,
+        "p95Ms": 25.253
+      }
+    ]
+  },
+  "processMiB": {
+    "heapUsed": 10.4,
+    "rss": 635.9
+  }
+}

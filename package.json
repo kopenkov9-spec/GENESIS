@@ -1,0 +1,13 @@
+{
+  "name": "genesis-beyond-matter",
+  "private": true,
+  "description": "Offline procedural evolution sandbox",
+  "scripts": {
+    "test": "node --test tests/rules.test.cjs",
+    "test:ui": "node tests/ui_host.cjs",
+    "bench": "node tests/bench.cjs"
+  },
+  "devDependencies": {
+    "@napi-rs/canvas": "0.1.100"
+  }
+}
